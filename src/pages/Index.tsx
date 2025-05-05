@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PieChart, Pie, Cell, ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, Legend, BarChart, Bar } from 'recharts';
@@ -682,4 +683,442 @@ const Index = () => {
                       </svg>
                     </button>
                     <button className="p-2 rounded-md hover:bg-gray-100">
-                      <svg className="h-5 w-5 text-gray-600" viewBox="0 0 20 20" fill="currentColor
+                      <svg className="h-5 w-5 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-7 text-center py-2 bg-gray-50 text-sm font-medium text-gray-500">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              
+              <div className="grid grid-cols-7 grid-rows-5 text-sm">
+                {/* First week - April spillover */}
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem] text-gray-400">28</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem] text-gray-400">29</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem] text-gray-400">30</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">1</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">2</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">3</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">4</div>
+                
+                {/* Second week */}
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">5</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">6</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">7</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">8</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">9</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">10</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">11</div>
+                
+                {/* Third week */}
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">12</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">13</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">14</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">15</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">
+                  16
+                  <div className="mt-1 p-1 bg-purple-100 text-purple-800 text-xs rounded truncate">
+                    Spanish Practice
+                  </div>
+                </div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">17</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">18</div>
+                
+                {/* Fourth week */}
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">19</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">20</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">21</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">22</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">23</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">24</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">25</div>
+                
+                {/* Fifth week */}
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">26</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">27</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">28</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">29</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem]">
+                  30
+                  <div className="mt-1 p-1 bg-blue-100 text-blue-800 text-xs rounded truncate">
+                    Website Launch
+                  </div>
+                </div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem] text-gray-400">1</div>
+                <div className="p-2 border-t border-r border-gray-200 h-24 min-h-[6rem] text-gray-400">2</div>
+              </div>
+            </motion.div>
+            
+            {/* Upcoming Deadlines */}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Upcoming Deadlines</h2>
+              <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                <ul className="divide-y divide-gray-200">
+                  {goals
+                    .sort((a, b) => new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime())
+                    .map((goal) => (
+                      <li key={goal.id} className="p-4 hover:bg-gray-50 transition-colors duration-150">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center">
+                            <div className={`w-3 h-3 rounded-full mr-3 ${
+                              goal.progress === 100 ? 'bg-green-500' : 
+                              goal.progress >= 50 ? 'bg-yellow-500' : 
+                              'bg-red-500'
+                            }`}></div>
+                            <div>
+                              <h3 className="font-medium text-gray-800">{goal.title}</h3>
+                              <p className="text-sm text-gray-500">Due {formatDate(goal.dueDate)}</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center">
+                            <span className="mr-4 text-sm font-medium text-gray-600">{goal.progress}%</span>
+                            <button
+                              onClick={() => handleViewGoal(goal)}
+                              className="text-indigo-600 hover:text-indigo-800"
+                            >
+                              View
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </main>
+
+      {/* Goal Details Modal */}
+      <AnimatePresence>
+        {showGoalDetails && activeGoal && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+            onClick={() => setShowGoalDetails(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              className="bg-white rounded-xl shadow-2xl overflow-hidden max-w-4xl w-full max-h-[80vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="p-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <h2 className="text-2xl font-bold text-gray-800">{activeGoal.title}</h2>
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                        activeGoal.category === 'Work' ? 'bg-blue-100 text-blue-800' : 
+                        activeGoal.category === 'Personal' ? 'bg-green-100 text-green-800' : 
+                        activeGoal.category === 'Education' ? 'bg-purple-100 text-purple-800' :
+                        'bg-orange-100 text-orange-800'
+                      }`}>
+                        {activeGoal.category}
+                      </span>
+                    </div>
+                    <p className="mt-2 text-gray-600">{activeGoal.description}</p>
+                  </div>
+                  <button 
+                    onClick={() => setShowGoalDetails(false)}
+                    className="text-gray-500 hover:text-gray-700"
+                  >
+                    <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <div className="mt-6">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Progress</h3>
+                  <div className="flex items-center">
+                    <div className="w-full bg-gray-200 rounded-full h-2.5 mr-4 flex-grow">
+                      <div 
+                        className={`h-2.5 rounded-full ${
+                          activeGoal.progress < 25 ? 'bg-red-500' : 
+                          activeGoal.progress < 75 ? 'bg-yellow-500' : 
+                          'bg-green-500'
+                        }`}
+                        style={{ width: `${activeGoal.progress}%` }}
+                      ></div>
+                    </div>
+                    <span className="text-sm font-medium text-gray-700">{activeGoal.progress}%</span>
+                  </div>
+                </div>
+                
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-3">Milestones</h3>
+                    <ul className="space-y-2">
+                      {activeGoal.milestones.map((milestone) => (
+                        <li key={milestone.id} className="flex items-center">
+                          <button 
+                            onClick={() => handleToggleMilestone(activeGoal.id, milestone.id)}
+                            className={`flex-shrink-0 w-5 h-5 border rounded-md mr-3 flex items-center justify-center ${
+                              milestone.completed 
+                                ? 'bg-indigo-500 border-indigo-500 text-white' 
+                                : 'border-gray-300'
+                            }`}
+                          >
+                            {milestone.completed && <Check className="w-3 h-3" />}
+                          </button>
+                          <span className={`text-gray-800 ${milestone.completed ? 'line-through text-gray-500' : ''}`}>
+                            {milestone.title}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-3">Details</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-center text-sm">
+                        <Calendar className="w-4 h-4 text-gray-500 mr-2" />
+                        <span className="font-medium text-gray-600">Created:</span>
+                        <span className="ml-2 text-gray-800">{formatDate(activeGoal.createdAt)}</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <Calendar className="w-4 h-4 text-gray-500 mr-2" />
+                        <span className="font-medium text-gray-600">Due Date:</span>
+                        <span className="ml-2 text-gray-800">{formatDate(activeGoal.dueDate)}</span>
+                      </div>
+                      <div className="flex items-start text-sm">
+                        <div className="flex-shrink-0 mt-1">
+                          <img 
+                            src={activeGoal.owner.avatar} 
+                            alt={activeGoal.owner.name}
+                            className="w-4 h-4 rounded-full mr-2"
+                          />
+                        </div>
+                        <span className="font-medium text-gray-600">Owner:</span>
+                        <span className="ml-2 text-gray-800">{activeGoal.owner.name}</span>
+                      </div>
+                      {activeGoal.teammates.length > 0 && (
+                        <div className="flex items-start text-sm">
+                          <div className="flex-shrink-0 mt-1">
+                            <div className="w-4 h-4 bg-gray-200 rounded-full mr-2 flex items-center justify-center text-xs text-gray-600 font-bold">
+                              T
+                            </div>
+                          </div>
+                          <span className="font-medium text-gray-600">Team:</span>
+                          <span className="ml-2 text-gray-800">
+                            {activeGoal.teammates.map(t => t.name).join(', ')}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-8">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Comments</h3>
+                  <div className="border rounded-lg divide-y">
+                    <div className="max-h-64 overflow-y-auto divide-y">
+                      {activeGoal.comments.map((comment) => (
+                        <div key={comment.id} className="p-4">
+                          <div className="flex items-start">
+                            <img 
+                              src={comment.user.avatar} 
+                              alt={comment.user.name} 
+                              className="w-8 h-8 rounded-full mr-3"
+                            />
+                            <div className="flex-1">
+                              <div className="flex justify-between items-center">
+                                <h4 className="font-medium text-gray-800">{comment.user.name}</h4>
+                                <span className="text-xs text-gray-500">{formatTimestamp(comment.timestamp)}</span>
+                              </div>
+                              <p className="text-gray-700 mt-1">{comment.text}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="p-4">
+                      <div className="flex gap-3">
+                        <img 
+                          src="https://randomuser.me/api/portraits/women/44.jpg" 
+                          alt="You" 
+                          className="w-8 h-8 rounded-full"
+                        />
+                        <div className="flex-1">
+                          <input
+                            type="text"
+                            value={newComment}
+                            onChange={(e) => setNewComment(e.target.value)}
+                            placeholder="Add a comment..."
+                            className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            onKeyDown={(e) => e.key === 'Enter' && handleAddComment()}
+                          />
+                        </div>
+                        <button
+                          onClick={handleAddComment}
+                          className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >
+                          Post
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* New Goal Modal */}
+      <AnimatePresence>
+        {showNewGoalModal && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+            onClick={() => setShowNewGoalModal(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              className="bg-white rounded-xl shadow-2xl overflow-hidden max-w-lg w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="p-6">
+                <div className="flex justify-between items-center">
+                  <h2 className="text-xl font-bold text-gray-800">Create New Goal</h2>
+                  <button 
+                    onClick={() => setShowNewGoalModal(false)}
+                    className="text-gray-500 hover:text-gray-700"
+                  >
+                    <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <div className="mt-6 space-y-4">
+                  <div>
+                    <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">Goal Title</label>
+                    <input
+                      type="text"
+                      id="title"
+                      value={newGoal.title}
+                      onChange={(e) => setNewGoal({...newGoal, title: e.target.value})}
+                      className="w-full border-gray-300 border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      placeholder="Enter a goal title"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                    <textarea
+                      id="description"
+                      rows={3}
+                      value={newGoal.description}
+                      onChange={(e) => setNewGoal({...newGoal, description: e.target.value})}
+                      className="w-full border-gray-300 border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      placeholder="Describe your goal"
+                    ></textarea>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                      <select
+                        id="category"
+                        value={newGoal.category}
+                        onChange={(e) => setNewGoal({...newGoal, category: e.target.value})}
+                        className="w-full border-gray-300 border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      >
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Education">Education</option>
+                        <option value="Business">Business</option>
+                      </select>
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="dueDate" className="block text-sm font-medium text-gray-700 mb-1">Due Date</label>
+                      <input
+                        type="date"
+                        id="dueDate"
+                        value={newGoal.dueDate}
+                        onChange={(e) => setNewGoal({...newGoal, dueDate: e.target.value})}
+                        className="w-full border-gray-300 border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between items-center mb-2">
+                      <label className="block text-sm font-medium text-gray-700">Milestones</label>
+                      <button
+                        type="button"
+                        onClick={addMilestoneField}
+                        className="text-sm text-indigo-600 hover:text-indigo-800"
+                      >
+                        + Add Milestone
+                      </button>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      {newGoal.milestones.map((milestone, index) => (
+                        <input
+                          key={index}
+                          type="text"
+                          value={milestone.title}
+                          onChange={(e) => updateMilestone(index, e.target.value)}
+                          className="w-full border-gray-300 border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                          placeholder={`Milestone ${index + 1}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end gap-3 mt-6">
+                    <button
+                      type="button"
+                      onClick={() => setShowNewGoalModal(false)}
+                      className="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleAddGoal}
+                      className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                      Create Goal
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default Index;
